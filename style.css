@@ -98,7 +98,7 @@ footer{
   height:3em;
   background-color: #F1F0E8;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin-top: 50px;
   font-family: Titillium Web;
 }
