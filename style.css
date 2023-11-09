@@ -33,6 +33,7 @@ body{
   margin-bottom:100px;
   background-color:white;
 }
+
 .profile>img{
 border-radius:50%;
 height: 12em;
@@ -47,15 +48,15 @@ justify-content: center;
   justify-content: center;
   font-family: Titillium Web;
   font-weight: bold;
-  
 }
+
 .info>img{
   float:left;
   height:11em;
   margin-right:20px;
   border-radius: 10px;
-  
 }
+
 .info>br{
   margin-top: 100px;
   margin-bottom: 100px;
@@ -63,32 +64,37 @@ justify-content: center;
   text-align:center;
 }
 
+@media (max-width: 768px) {
+  .info {
+      flex-direction: column;
+      align-items: center;
+  }
+}   
 
+---------------------------------------
 .button{
   display: flex;
   flex-direction:row;
   width:100%;
   justify-content: center;
-  text-decoration: none;
-
-
-}
-button{
-  display:flex;
-  flex-direction:row;
   align-items:center;
-  justify-content: center;
+  height:100vh;
+}
+
+.button{
+  text-decoration: none;
   margin-top:100px;
   color:#96B6C5;
-  background:EEE0C9;
+  background:#EEE0C9;
   border-radius: 20px;
-  height: 2em ;
+  height: 2em;
   width: 8em;
   font-size:2em;
   border: none;
-  display: inline-block;
-}
+  }
 
+
+/* /* FOOTER */
 footer{
   display: flex;
   flex-direction:row;
@@ -102,3 +108,14 @@ footer{
   margin-top: 50px;
   font-family: Titillium Web;
 }
+
+@media (max-width: 768px) {
+  footer{
+      flex-direction: column;
+      align-items: center;
+      height:6em;
+      justify-content: center;
+  }
+}
+
+
